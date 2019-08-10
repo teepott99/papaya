@@ -16,8 +16,8 @@
 
 <body>
   <!-- Navigation -->
-  <nav class="uk-navbar">
-      <a href="#" class="uk-navbar-brand">
+  <nav class="uk-navbar" uk-sticky="top: 100; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
+      <a href="#" class="uk-navbar-brand" >
         <img src="images/PC_Logo_Colors-07.svg" height="200px" uk-svg>
       </a>
       <ul class="uk-navbar-nav">
@@ -29,11 +29,12 @@
           <li><button class="uk-button uk-button-primary" type="button" data-uk-button>Let's Get Started</button></li>
       </ul>
   </nav>
+
   <!-- Hero Image/Section 1 -->
   <div class="uk-cover-background">
     <img src="images/depositphotos_160089182_stock__A0_Rectangle_2_pattern.png" alt="florist looking over her website" uk-img>
     <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-flex uk-flex-column">
-      <h2>We’ll Build Your Website...</h2>
+      <h2 class="">We’ll Build Your Website...</h2>
       <h1 class="uk-heading-medium">Then We’ll Grow Your Traffic<h1>  
       <h4>My mission is to put small, ethically-driven brands on the digital map. </h4>
       <h4>Let me help you get back to the work that matters to you.</h4>
@@ -44,7 +45,7 @@
     <div class="uk-flex uk-text-center uk-flex-column">
       <div>
         <h1 class="uk-heading-medium">1.7 Billion Registered Websites</h1>
-        <h2>And Counting...</h2>
+        <h2 class="">And Counting...</h2>
         <p>Too many websites don’t even show up on Google. What are you doing to get noticed? We can help.</p>
       </div>
       <div>
@@ -52,11 +53,13 @@
       </div>
     </div>
   </div>
-  <div class="uk-block-secondary uk-contrast uk-block uk-block-large">
+
+  <!-- Services -->
+  <div class="uk-block-default uk-contrast uk-block uk-block-large">
     <div class="uk-flex uk-text-center uk-flex-column uk-flex-middle uk-container">
       <div class="uk-text-center">
           <h1 class="uk-heading-medium">Services</h1>
-          <h2>What are we doing here?</h2>
+          <h2 class="">What are we doing here?</h2>
       </div>
       <div class="uk-flex uk-text-center" uk-grid data-uk-margin uk-height-match>
         <div class="uk-width-1-2@m" uk-grid>
@@ -82,11 +85,13 @@
       </div>
     </div>
   </div>
+
+  <!-- The Process -->
   <div class="uk-text-contrast uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover" data-src="images/image-from-rawpixel-id-1201197-original [Converted]-01.png" uk-img data-uk-parallax="{bg: '-200'}">
     <div class="uk-container">
       <div class="uk-text-center uk-flex uk-flex-column">
         <h1 class="uk-heading-medium">The Process</h1>
-        <h2>Here’s What You Can Expect</h2>
+        <h2 class="">Here’s What You Can Expect</h2>
       </div>
       <div class="uk-flex uk-text-center" uk-grid data-uk-margin>
         <div class="uk-width-1-3@m uk-text-left">
@@ -107,13 +112,15 @@
       </div>
     </div>
   </div>
-  <div class="uk-block-secondary uk-contrast uk-block uk-block-large">
+
+  <!-- Lead Generator -->
+  <div class="uk-block-default uk-contrast uk-block uk-block-large">
     <div class="uk-flex uk-flex-column uk-flex-middle uk-container">
       <div class="uk-width-1-3@m uk-text-center@s">
         <img src="images/PC_FlowerIcons-03.svg" height="200px" alt="Flower Icon" uk-svg>
       </div>
       <div class="uk-text-center">
-        <h2>Five Steps to Start</h2>  
+        <h2 class="">Five Steps to Start</h2>  
         <h1 class="uk-heading-medium">Improving Your Google Ranking Today</h1>
         <p>Want to start improving your web presence today? Here are 5 things you can do today to begin improving your ranking.</p>
       </div>
@@ -123,5 +130,59 @@
     </div>
   </div>
 
+  <!-- Floating Banner -->
+  <div class="uk-margin uk-padding">
+    <div class="uk-card uk-card-small uk-card-body uk-flex uk-flex-center uk-flex-middle uk-background-cover" data-src="images/henry_co_tqu0IOMaiU8_unsplash_A0_Rectangle_23_pattern.png" uk-img>
+      <div>
+        <h4 class="uk-card-title">Don’t Settle on your brand, We Won’t.</h4> 
+      </div>
+      <div class="uk-flex-center uk-flex uk-align-right@m">
+        <button class="uk-button uk-button-primary" type="button" href="/contact">Let's Get Started</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="uk-block-default uk-contrast uk-block uk-block-large footer">
+    <div class="uk-flex uk-flex-wrap-middle uk-container uk-child-width-1-2" uk-grid>
+      <div class=" uk-flex-column ">
+      <div class="uk-width-1-2@m" uk-grid>
+        <a href="#" class="">
+          <img src="images/PC_Logo_Colors-08.svg" height="200px" uk-svg>
+        </a>
+      </div>
+      <div class="uk-child-width-1-2@m uk-text-left" uk-grid>
+        <div>
+          <h2>Work With Us</h2>
+          <ul class="uk-list">
+            <li>Services</li>
+            <li>Business Collaborators</li>
+          </ul>
+        </div>
+        <div>
+          <h2>About Papaya</h2>
+          <ul class="uk-list">
+            <li>About</li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      <!-- Contact -->
+      <div class="uk-width-1-2@m" uk-grid>
+        <h2>Have a Question?</h2>
+        <form class="uk-form">
+          <div class="uk-form-row ">
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Your Email">
+          </div>
+          <div class="uk-form-row">
+            <textarea class="uk-form-width-large" cols="" rows="" placeholder="Your Message"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
